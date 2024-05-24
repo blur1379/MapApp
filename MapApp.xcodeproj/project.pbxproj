@@ -16,6 +16,7 @@
 		A907525B2BFD0C8F00C66B28 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A907525A2BFD0C8F00C66B28 /* LocationsView.swift */; };
 		A907525D2BFD108600C66B28 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A907525C2BFD108600C66B28 /* LocationsViewModel.swift */; };
 		A907525F2BFE73FD00C66B28 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A907525E2BFE73FD00C66B28 /* LocationsListView.swift */; };
+		A9F3E4452C01295F00B05F20 /* LocationPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F3E4442C01295F00B05F20 /* LocationPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A907525A2BFD0C8F00C66B28 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		A907525C2BFD108600C66B28 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		A907525E2BFE73FD00C66B28 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
+		A9F3E4442C01295F00B05F20 /* LocationPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				A907525A2BFD0C8F00C66B28 /* LocationsView.swift */,
 				A907525E2BFE73FD00C66B28 /* LocationsListView.swift */,
+				A9F3E4442C01295F00B05F20 /* LocationPreview.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				A90752592BFD0B9200C66B28 /* LocationsDataService.swift in Sources */,
 				A907525F2BFE73FD00C66B28 /* LocationsListView.swift in Sources */,
 				A907525D2BFD108600C66B28 /* LocationsViewModel.swift in Sources */,
+				A9F3E4452C01295F00B05F20 /* LocationPreview.swift in Sources */,
 				A90752422BFD03E500C66B28 /* ContentView.swift in Sources */,
 				A907525B2BFD0C8F00C66B28 /* LocationsView.swift in Sources */,
 				A90752562BFD066E00C66B28 /* Location.swift in Sources */,
