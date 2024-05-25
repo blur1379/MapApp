@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A90752402BFD03E500C66B28 /* MapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A907523F2BFD03E500C66B28 /* MapAppApp.swift */; };
-		A90752422BFD03E500C66B28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90752412BFD03E500C66B28 /* ContentView.swift */; };
 		A90752472BFD03E700C66B28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90752462BFD03E700C66B28 /* Preview Assets.xcassets */; };
 		A90752502BFD04D000C66B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A907524F2BFD04D000C66B28 /* Assets.xcassets */; };
 		A90752562BFD066E00C66B28 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90752552BFD066E00C66B28 /* Location.swift */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		A907523C2BFD03E500C66B28 /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A907523F2BFD03E500C66B28 /* MapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppApp.swift; sourceTree = "<group>"; };
-		A90752412BFD03E500C66B28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A90752462BFD03E700C66B28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A907524F2BFD04D000C66B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90752552BFD066E00C66B28 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				A907523F2BFD03E500C66B28 /* MapAppApp.swift */,
-				A90752412BFD03E500C66B28 /* ContentView.swift */,
 				A90752572BFD076B00C66B28 /* DataServices */,
 				A90752512BFD05C900C66B28 /* Views */,
 				A90752522BFD060100C66B28 /* ViewModels */,
@@ -191,7 +188,6 @@
 				A907525F2BFE73FD00C66B28 /* LocationsListView.swift in Sources */,
 				A907525D2BFD108600C66B28 /* LocationsViewModel.swift in Sources */,
 				A9F3E4452C01295F00B05F20 /* LocationPreview.swift in Sources */,
-				A90752422BFD03E500C66B28 /* ContentView.swift in Sources */,
 				A907525B2BFD0C8F00C66B28 /* LocationsView.swift in Sources */,
 				A90752562BFD066E00C66B28 /* Location.swift in Sources */,
 				A90752402BFD03E500C66B28 /* MapAppApp.swift in Sources */,
@@ -341,7 +337,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.blur.MapApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -370,7 +366,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.blur.MapApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

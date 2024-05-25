@@ -12,24 +12,37 @@ struct LocationPreview: View {
     let location: Location
     
     var body: some View {
-        VStack(spacing: 16) {
+        HStack(alignment: .bottom, spacing: 0) {
+            VStack(alignment: .leading, spacing: 16) {
+                imageSession()
+                titleSession()
+            }
             
-            imageSession()
-            
-            titleSession()
-            
+            VStack(spacing: 8) {
+                learnMoreButton()
+                nextButton()
+            }
         }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .fill(.ultraThinMaterial)
+                .offset(y: 65)
+        )
+        .cornerRadius(10)
+        
     }
 }
 
 #Preview {
     LocationPreview(location: LocationsDataService.locations.first!)
+        .padding()
 }
 
 extension LocationPreview {
     
     @ViewBuilder
-    func imageSession() -> some View {
+    private func imageSession() -> some View {
         ZStack {
             if let imageName = location.imageNames.first {
                 Image(imageName)
@@ -40,12 +53,12 @@ extension LocationPreview {
             }
         }
         .padding(6)
-        .background(Color.red)
+        .background(Color.white)
         .cornerRadius(10)
     }
     
     @ViewBuilder
-    func titleSession() -> some View {
+    private func titleSession() -> some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(location.name)
                 .font(.title2)
@@ -54,6 +67,33 @@ extension LocationPreview {
             Text(location.cityName)
                 .font(.subheadline)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    @ViewBuilder
+    private func learnMoreButton() -> some View {
+        Button {
+            print("")
+        } label: {
+            Text("Learn more")
+                .font(.headline)
+                .frame(width: 125, height: 35)
+        }
+        .buttonStyle(.borderedProminent)
+    }
+    
+    @ViewBuilder
+    private func nextButton() -> some View {
+        
+        Button {
+            print("")
+        } label: {
+            Text("Next")
+                .font(.headline)
+                .frame(width: 125, height: 35)
+        }
+        .buttonStyle(.bordered)
+        
     }
     
 }
