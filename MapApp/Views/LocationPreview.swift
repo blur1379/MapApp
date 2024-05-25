@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LocationPreview: View {
-    
+    @EnvironmentObject private var vm: LocationsViewModel
     let location: Location
     
     var body: some View {
@@ -37,6 +37,7 @@ struct LocationPreview: View {
 #Preview {
     LocationPreview(location: LocationsDataService.locations.first!)
         .padding()
+        .environmentObject(LocationsViewModel())
 }
 
 extension LocationPreview {
@@ -84,9 +85,8 @@ extension LocationPreview {
     
     @ViewBuilder
     private func nextButton() -> some View {
-        
         Button {
-            print("")
+            vm.nextButtonPressed()
         } label: {
             Text("Next")
                 .font(.headline)
