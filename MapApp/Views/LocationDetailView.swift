@@ -91,7 +91,7 @@ extension LocationDetailView {
     private func mapLayer() -> some View {
         Map(coordinateRegion: .constant(MKCoordinateRegion(
                 center: location.coordinates,
-                span: vm.mapSpan)),
+                span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))),
             annotationItems: [location]) { location in
             MapAnnotation(coordinate: location.coordinates) {
                 LocationMapAnnotationView()
