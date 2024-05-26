@@ -74,7 +74,7 @@ extension LocationPreview {
     @ViewBuilder
     private func learnMoreButton() -> some View {
         Button {
-            print("")
+            vm.sheetLocation = location
         } label: {
             Text("Learn more")
                 .font(.headline)
